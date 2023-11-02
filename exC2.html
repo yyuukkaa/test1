@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Test Page</title>
+  </head>
+  <body>
+   <div id="head">こんにちは </div>  
+   <button id="b1"> 名前の追加 </button>
+    <script>
+    function myFunction() {
+      const temp = prompt("名前を入力してください");
+      let a = document.getElementById('head');
+      a.textContent = a.textContent+temp;
+    }
+  
+    let b = document.getElementById('b1');
+    b.addEventListener("click", myFunction)
+    </script>
+  </body>
+</html>
